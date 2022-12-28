@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template using js</title>
+    <link rel="stylesheet" href="CSS/lightbox.css">
+    <!-- <link rel="stylesheet" href="CSS/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="CSS/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+</head>
+<body>
+    <!--start setting box-->
+    <div class="setting-box px-3 fixed">
+        <div class="toggle-settings">
+        <i class="fa-solid fa-gear iconSet"></i>
+        </div>
+        <div class="setting-container">
+            <h5 class="text-center my-4" style="color: var(--main-color);">Setting Options</h5>
+            <div class="colors px-2 py-2">
+                <p class="text-center">Colors</p>
+                <ul class="list-color">
+                    <li class="active" data-color = "#f0753c"></li>
+                    <li data-color = "#eb3717"></li>
+                    <li data-color = "#e79906"></li>
+                    <li data-color = "#e7062c"></li>
+                </ul>
+            </div>
+            <div class="colors px-2 py-2 mt-2">
+                <p class="text-center">Random Backgrounds</p>
+                <div class="randomBg">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+    
+            </div>
+        </div>
+        
+    </div>
+    <!--end setting box-->
+
+    <!--start main section-->
+
+    <div class="all-page">
+        <div class="overlay"></div>
+        <div class="header container-fluid fixed-top bg-color py-4 d-flex justify-content-space-between align-items-center navbar navbar-expand-md" style="transition:0.5s;">
+            <div class="logo col-lg-4 col-7">Your Logo</div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon text-white"><i class="fa-solid fa-bars-staggered"></i></span>
+            </button>
+
+            <nav class="col-lg-8 col-5 collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="d-flex align-items-center navbar-nav">
+                <li class="mr-5 nav-item"><a href="#" class="active">Home</a></li>
+                <li class="mr-5 nav-item"><a href="#">products</a></li>
+                <li class="mr-5 nav-item"><a href="#">Service</a></li>
+                <li class="mr-5 nav-item"><a href="#">contact</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="intro-text">
+            <h1 class="">we are creative agency</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="mt-3 d-inline-block">Services</a>
+        </div>
+    </div>
+    <!--end main section-->
+
+    <!--start about us section-->
+    <div class="about-us container-fluid my-5 appear">
+        <div class="row">
+            <h2 class="about-title col-12 text-center mb-5" style="color: var(--main-color);">About Us</h2>
+            <div class="col-md-5 col-12 bgabout-sec">
+                <img src="images/product-1.jpg" class="w-100" alt="about" style="transition: 0.5s;">
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="mt-5">
+                <h3 class="">About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum molestiae eveniet totam quia praesentium assumenda obcaecati ipsam. Est, nesciunt!</p>
+                <a href="#" class="mt-3 d-inline-block">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end about us section-->
+
+    <!--start Skills section-->
+    <div class="about-us mt-5 appear py-5" style="background-color: #eee;">
+        <div class="container">
+        <div class="row flex-column">
+            <h2 class="about-title col-12 text-center mb-5" style="color: var(--main-color);">Our Skills</h2>
+            <div class="skill-box d-flex flex-wrap align-items-center justify-content-space-between py-3 px-3" style="background-color:#fff;">
+                <div class="skill-name col-md-2 mb-md-0 mb-2" style="color: var(--main-color);">HTML</div>
+                <div class="progress col-md-10 p-0">
+                    <div class="progress-bar" role="progressbar" data-progress="95" aria-valuenow="95"
+                    aria-valuemin="0" aria-valuemax="100" style="width:0%;">
+                        <span class="sr-only">95% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box d-flex flex-wrap align-items-center justify-content-space-between py-3 px-3" style="background-color:#fff;">
+                <div class="skill-name col-md-2 mb-md-0 mb-2" style="color: var(--main-color);">CSS</div>
+                <div class="progress col-md-10 p-0">
+                    <div class="progress-bar" role="progressbar" data-progress="85" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100" style="width:0%;">
+                        <span class="sr-only">85% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box d-flex flex-wrap align-items-center justify-content-space-between py-3 px-3" style="background-color:#fff;">
+                <div class="skill-name col-md-2 mb-md-0 mb-2" style="color: var(--main-color);">JavaScript</div>
+                <div class="progress col-md-10 p-0">
+                    <div class="progress-bar" role="progressbar" data-progress="75" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="width:0%;">
+                        <span class="sr-only">75% Complete</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    </div>
+    <!--end about us section-->
+    <!--start Gallary section-->
+    <div class="gallarySec mt-5 py-5">
+        <div class="container">
+            <h2 class="about-title col-12 text-center mb-5" style="color: var(--main-color);">Our Gallary</h2>
+            <div class="imgsBox row justify-content-center">
+
+                <!--(((((created by javaScrit)))))-->
+
+                <!-- <div class="imgBox col-lg-4 col-md-3 col-12 mb-4">
+                    <a href="images/product-1.jpg" data-lightbox="products" data-title="product-1">
+                    <img src="images/product-1.jpg" alt="" class="w-100">
+                </a>
+                </div> -->
+
+            </div>
+            <div class="col-12 text-center">
+            <button type="button" id="load-more">Load More</button>
+            </div>
+        </div>
+    </div>
+    <!--end Gallary section-->
+
+
+    
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/jquery-3.6.1.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+    <!-- <script src="JS/owl.carousel.min.js"></script> -->
+    <script src="JS/lightbox-plus-jquery.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

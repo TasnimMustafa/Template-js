@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color:#01539D;
+    --main-color:#f0753c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-color.scrolled {
+    background-color: #000;
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.2);
+}
+
+/* start setting box */
+.setting-box {
+    position: fixed;
+    top: 0;
+    left: -15%;
+    width: 15%;
+    z-index: 10000;
+    background-color: #fff;
+    transition: 0.5s;
+    height: 100vh;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .setting-box {
+        left: -53%;
+        width: 53%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .setting-box {
+        left: -30%;
+        width: 30%;
+    }
+}
+
+.setting-box.open {
+    left: 0;
+}
+
+.setting-box .toggle-settings {
+    position: absolute;
+    right: -41px;
+    top:100px;
+    background-color: #fff;
+    color: var(--main-color);
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.iconSet {
+    padding: 8px 0px;
+    width: 41px;
+}
+
+.setting-container .colors {
+    background-color: #f0ecec;
+    
+}
+
+.setting-container .colors p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.setting-container h5 {
+    font-size: 18px;
+}
+
+.setting-container .colors .list-color {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.setting-container .colors .list-color li {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.setting-container .colors .list-color li.active {
+outline: 1px solid var(--main-color);
+outline-offset: 2px;
+}
+
+.setting-container .colors .list-color li:first-child {
+    background-color: #f0753c;
+}
+
+.setting-container .colors .list-color li:nth-child(2) {
+    background-color: #eb3717;
+}
+
+.setting-container .colors .list-color li:nth-child(3) {
+    background-color: #e79906;
+}
+
+.setting-container .colors .list-color li:last-child {
+    background-color: #e7062c;
+}
+
+/* start setting box (random background)*/
+.randomBg {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.randomBg .yes,
+.randomBg .no {
+    width: 3rem;
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.randomBg span.active {
+    opacity: 1;
+}
+/* end setting box (random background)*/
+
+/* end setting box */
+
+
+.all-page {
+    min-height: 100vh;
+    background-image: url(../images/back2.jpg);
+    background-size: cover;
+    position: relative;
+    transition: 0.5s;
+}
+
+.all-page .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    color: #fff;
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.header ul {
+    list-style: none;
+    margin-bottom: 0 !important;
+    z-index: 3;
+}
+
+.header ul li {
+    font-size: 18px;
+}
+
+.header ul li a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header ul li a:hover,
+.header ul li a.active {
+    color: var(--main-color);
+}
+
+.intro-text {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.intro-text h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0 0 12px;
+    color: var(--main-color);
+}
+
+.intro-text p {
+    color: #fff;
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
+}
+
+/*about us*/
+.intro-text a, .about-us a {
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    transition: 0.5s;
+}
+
+.intro-text a:hover, .about-us a:hover {
+    color:#f0ecec;
+}
+
+.appear {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.7s ease;
+}
+
+.appear.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/*end about us*/
+
+/*start our skills*/
+.skill-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.progress {
+    height: 24px !important;
+}
+
+.progress-bar {
+    background-color: var(--bg-color) !important;
+}
+/*end our skills*/
+
+/*start gallary*/
+.imgsBox {
+    gap: 5px;
+}
+
+.imgBox {
+    display: none;
+    filter: grayscale(1);
+    transition: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 2px !important;
+    border: 4px solid var(--main-color); 
+    transition: 0.5s;
+}
+
+.imgBox:nth-child(1),
+.imgBox:nth-child(2),
+.imgBox:nth-child(3) {
+    display: block;
+}
+
+.imgBox:hover {
+    filter:  grayscale(0);
+}
+
+.imgBox a {
+    padding: 0;
+}
+
+.imgBox img {
+    transition: 0.5s;   
+}
+
+.imgBox img:hover {
+    transform: scale(1.2);
+}
+
+#load-more {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+#load-more:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}
+/*end gallary*/
+
+
+
+
+
+
+
